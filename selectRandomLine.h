@@ -4,7 +4,6 @@
 
 
 char* selectRandomLine(char* path  ){
-    srand(time(NULL));
     
     
     FILE* file =  fopen("paises.txt", "r"); 
@@ -31,4 +30,4 @@ char* selectRandomLine(char* path  ){
     fclose(file);  
     char* line = currentLine;
     return line;
-};
+}
