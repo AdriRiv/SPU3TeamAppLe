@@ -8,24 +8,28 @@ char* selectRandomLine(char* path  ){
     
     
     FILE* file =  fopen("paises.txt", "r"); 
-    char currentLine[100];
+    char currentLine[10];
 
     //int x = 0;
     
 
     while (  fscanf( file, "%s", currentLine ) != EOF  )
     {
-        int x = rand()%20;
-        if(x==rand()%20){
+        
+        int line = 0;
+        if(line==rand()%21)
+        {   
+
             
             printf("word:%s\n", currentLine);
-            break;
+            
             
         }
         
+    
     }   
-   
+    
     fclose(file);  
-      
-    return currentLine;
-}
+    char* line = currentLine;
+    return line;
+};
