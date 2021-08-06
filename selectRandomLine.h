@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
+
 
 char* selectRandomLine(char* path  ){
     srand(time(NULL));
@@ -10,7 +10,6 @@ char* selectRandomLine(char* path  ){
     FILE* file =  fopen("paises.txt", "r"); 
     char currentLine[10];
 
-    //int x = 0;
     
 
     while (  fscanf( file, "%s", currentLine ) != EOF  )
