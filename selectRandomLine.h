@@ -20,10 +20,10 @@ char* selectRandomLine(char* path  ){
         if(line==rand()%21)
         {   
 
+            char* fila = currentLine;
             
-            printf("word:%s\n", currentLine);
             
-            
+            return fila;
         }
         
     
