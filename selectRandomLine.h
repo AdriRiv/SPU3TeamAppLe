@@ -4,9 +4,7 @@
 
 
 char* selectRandomLine(char* path  ){
-    srand(time(NULL));
-    
-    
+    // srand(time(NULL));
     FILE* file =  fopen("paises.txt", "r"); 
     char currentLine[10];
 
@@ -19,13 +17,9 @@ char* selectRandomLine(char* path  ){
         if(line==rand()%21)
         {   
 
-            char* fila = currentLine;
-            
-            
+            char* fila = currentLine;  
             return fila;
         }
-        
-    
     }   
     
     fclose(file);  
