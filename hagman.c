@@ -35,8 +35,10 @@ int main(){
         srand(time(NULL));
         
         //SeedGame//
-        country = selectRandomLine("./paises.txt");  
+        country = selectRandomLine("./paises.txt"); 
+        
         encodedCountry = encodeCountry( country, &currentPoint );
+        
         pointToWin = len(country);
 
 
